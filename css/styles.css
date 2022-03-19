@@ -1,0 +1,219 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #fff;
+    --specific-color: #2196f3;
+
+    --primary-bg-color: #e5e5e5;
+    --accent-bg-color: #2f303a;
+    --specific-bg-color: #f5f4fa;
+}
+body {
+    color: var(--primary-text-color);
+    background: var(--primary-bg-color);
+    font-family: Roboto, sans-serif
+}
+.list {
+    list-style: none;
+}
+
+/* header */
+.header {
+    background: var(--accent-color);
+}
+.logotyp-head,
+.logotyp-web,
+.logotyp-footer {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,19;
+}
+.logotyp-head {
+    color: #000;
+}
+.logotyp-web {
+    color: var(--specific-color);
+}
+.head-links {
+    font-weight: 500;
+    line-height: 16px;
+}
+.studio-name {
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+.studio-name:hover,
+.studio-name:focus {
+    color: var(--specific-color);
+}
+.studio-name.current {
+    color: var(--specific-color);
+}
+.portfolio-name {
+    text-decoration: none;
+}
+.contacts-name {
+    text-decoration: none;
+}
+
+.mail-adress {
+    color: var(--title-text-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    text-decoration: none;
+}
+.mail-adress:hover,
+.mail-adress:focus {
+    color: var(--specific-color);
+}
+.mail-adress.current {
+    color: var(--specific-color);
+}
+.phone-namber {
+    color: var(--primary-text-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    text-decoration: none;
+}
+.portfolio-name {
+    color: var(--title-text-color);
+}
+.contacts-name {
+    color: var(--title-text-color);
+}
+
+/* hero */
+.hero-section {
+    background-color: var(--accent-bg-color);
+}
+.hero-title {
+    color: var(--accent-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1,36;
+    text-align: center;
+}
+.button-primary {
+    color: var(--accent-color);
+    background: var(--specific-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,88px;
+    cursor: pointer;
+}
+/* sections */
+h2, h3 {
+    color: var(--title-text-color);
+    font-weight: 700;
+}
+.section-title {
+    font-size: 36px;
+    line-height: 1,17;
+    text-align: center;
+}
+.successes-section {
+    background: var(--specific-bg-color);
+}
+.successes-title {
+    font-size: 14px;
+    line-height: 1,14;
+}
+.successes-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,71;
+}
+.photo-section {
+    background: var(--specific-bg-color);
+}
+.team-section {
+    background: var(--primary-bg-color);
+}
+.team-links {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,19;
+}
+.team-profession {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1,19;
+    text-align: center;
+}
+
+/* portfolio */
+.portfolio-name {
+    color: var(--title-text-color);
+}
+.portfolio-name:hover,
+.portfolio-name:focus {
+    color: var(--specific-color);
+}
+.portfolio-name.current {
+    color: var(--specific-color);
+}
+.portfolio-main {
+    background: var(--primary-bg-color);
+}
+.button-first {
+    color: var(--accent-color);
+    background: var(--specific-color);
+}
+.button-first:hover,
+.button-first:focus {
+    background: var(--accent-bg-color);
+}
+.button-second {
+    background: var(--specific-bg-color);
+    color: var(--title-text-color);
+}
+.button-first,
+.button-second {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1,63;
+    cursor: pointer;
+}
+.advertising-name {
+    color: var(--title-text-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    text-decoration: none;
+}
+.advertising-variety {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1,88;
+}
+/* footer */
+.footer {
+    background: var(--accent-bg-color);
+}
+.logotyp-footer {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,19;
+}
+.address-footer {
+    color: var(--accent-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,71;
+}
+.mail-footer,
+.phone-footer {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,71
+}
