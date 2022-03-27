@@ -180,7 +180,8 @@ h3 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.photo-one {
+.no-gap {
+  display: block;
 }
 .gray {
   background: var(--specific-bg-color);
@@ -193,9 +194,13 @@ h3 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.two-image {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
 .team-name {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 .team-profession {
   color: var(--primary-text-color);
@@ -204,7 +209,7 @@ h3 {
   line-height: 1.19;
   text-align: left;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 
 /* portfolio */
@@ -250,13 +255,18 @@ h3 {
   padding: 6px 22px;
   height: 38px;
 }
-
+.third-image {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
 .advertising-name {
   color: var(--title-text-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   text-decoration: none;
+  margin-top: 0px;
+  margin-bottom: 4px;
 }
 .advertising-scroll {
   margin-top: 0px;
@@ -269,6 +279,8 @@ h3 {
   font-style: normal;
   font-weight: 400;
   line-height: 1.88;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 /* footer */
 .footer {
