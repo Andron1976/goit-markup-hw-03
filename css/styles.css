@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -18,6 +27,12 @@ body {
 }
 
 /* header */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
 .header {
   background: var(--accent-color);
 }
@@ -38,6 +53,8 @@ body {
 .head-links {
   font-weight: 500;
   line-height: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .studio-name {
   color: var(--title-text-color);
@@ -96,14 +113,19 @@ body {
 /* hero */
 .hero-section {
   background-color: var(--accent-bg-color);
+  text-align: center;
 }
 .hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  width: 696px;
+  height: 120px;
   color: var(--accent-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
-  width: 500px;
 }
 .button-primary {
   color: var(--accent-color);
@@ -122,36 +144,58 @@ h3 {
   font-weight: 700;
 }
 .section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
-.first {
+/* .first {
   color: var(--primary-bg-color);
-}
-.successes-section {
-  background: var(--specific-bg-color);
+} */
+.section {
+  background: var(--primary-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .successes-title {
   font-size: 14px;
   line-height: 1.14;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.successes-scroll {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .successes-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-.photo-section {
+
+.photo-links {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.photo-one {
+}
+.gray {
   background: var(--specific-bg-color);
-}
-.team-section {
-  background: var(--primary-bg-color);
 }
 .team-links {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.team-name {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .team-profession {
   color: var(--primary-text-color);
@@ -159,6 +203,8 @@ h3 {
   font-size: 16px;
   line-height: 1.19;
   text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /* portfolio */
@@ -175,9 +221,15 @@ h3 {
 .portfolio-main {
   background: var(--primary-bg-color);
 }
+.button-group {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .button-first {
   color: var(--accent-color);
   background: var(--specific-color);
+  width: 73px;
+  border: 1px solid var(--specific-color);
 }
 .button-first:hover,
 .button-first:focus {
@@ -186,6 +238,7 @@ h3 {
 .button-second {
   background: var(--specific-bg-color);
   color: var(--title-text-color);
+  border: 1px solid var(--specific-bg-color);
 }
 .button-first,
 .button-second {
@@ -193,13 +246,21 @@ h3 {
   font-weight: 500;
   line-height: 1.63;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 6px 22px;
+  height: 38px;
 }
+
 .advertising-name {
   color: var(--title-text-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   text-decoration: none;
+}
+.advertising-scroll {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .advertising-variety {
   color: var(--primary-text-color);
@@ -212,6 +273,8 @@ h3 {
 /* footer */
 .footer {
   background: var(--accent-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logotyp-footer {
   color: var(--accent-color);
