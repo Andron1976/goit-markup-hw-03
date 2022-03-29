@@ -268,11 +268,7 @@ h3 {
 .portfolio-name.current {
   color: var(--specific-color);
 }
-.portfolio-main {
-  background: var(--primary-bg-color);
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
+
 .button-section > .button-group {
   margin-top: 0px;
   margin-bottom: 20px;
