@@ -52,7 +52,7 @@
     <main>
       <!--hero section-->
       <section class="hero-section">
-        <div class="container">
+        <div class="hero-container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
 
           <button type="button" class="button-primary">Заказать услугу</button>
@@ -64,28 +64,28 @@
         <div class="container">
           <h2 class="hidden">Наши преимущества</h2>
           <ul class="successes-scroll list">
-            <li>
+            <li class="successes-content">
               <h3 class="successes-title">Внимание к деталям</h3>
               <p class="successes-text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="successes-content">
               <h3 class="successes-title">Пунктуальность</h3>
               <p class="successes-text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="successes-content">
               <h3 class="successes-title">Планирование</h3>
               <p class="successes-text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="successes-content">
               <h3 class="successes-title">Современные технологии</h3>
               <p class="successes-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -101,76 +101,57 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="photo-links list">
             <li>
-              <img
-                class="one-image"
-                src="images/laptop.jpg"
-                alt="laptop"
-                width="370"
-              />
+              <img src="images/laptop.jpg" alt="laptop" width="370" />
             </li>
             <li>
-              <img
-                class="one-image"
-                src="images/phones.jpg"
-                alt="phones"
-                width="370"
-              />
+              <img src="images/phones.jpg" alt="phones" width="370" />
             </li>
             <li>
-              <img
-                class="one-image"
-                src="images/mozaika.jpg"
-                alt="mozaika"
-                width="370"
-              />
+              <img src="images/mozaika.jpg" alt="mozaika" width="370" />
             </li>
           </ul>
         </div>
       </section>
       <!--team section-->
-      <section class="section gray">
+      <section class="team-section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-links list">
             <li>
-              <img
-                class="two-image"
-                src="images/dem.jpg"
-                alt="dem"
-                width="270"
-              />
-              <p class="team-name">Игорь Демьяненко</p>
-              <p class="team-profession">Product Designer</p>
+              <article class="team-card">
+                <img src="images/dem.jpg" alt="dem" width="270" />
+                <div class="team-content">
+                  <h3 class="team-name">Игорь Демьяненко</h3>
+                  <p class="team-profession">Product Designer</p>
+                </div>
+              </article>
             </li>
             <li>
-              <img
-                class="two-image"
-                src="images/rep.jpg"
-                alt="rep"
-                width="270"
-              />
-              <p class="team-name">Ольга Репина</p>
-              <p class="team-profession">Frontend Developer</p>
+              <article class="team-card">
+                <img src="images/rep.jpg" alt="rep" width="270" />
+                <div class="team-content">
+                  <h3 class="team-name">Ольга Репина</h3>
+                  <p class="team-profession">Frontend Developer</p>
+                </div>
+              </article>
             </li>
             <li>
-              <img
-                class="two-image"
-                src="images/tar.jpg"
-                alt="tar"
-                width="270"
-              />
-              <p class="team-name">Николай Тарасов</p>
-              <p class="team-profession">Marketing</p>
+              <article class="team-card">
+                <img src="images/tar.jpg" alt="tar" width="270" />
+                <div class="team-content">
+                  <h3 class="team-name">Николай Тарасов</h3>
+                  <p class="team-profession">Marketing</p>
+                </div>
+              </article>
             </li>
             <li>
-              <img
-                class="two-image"
-                src="images/erm.jpg"
-                alt="erm"
-                width="270"
-              />
-              <p class="team-name">Михаил Ермаков</p>
-              <p class="team-profession">UI Designer</p>
+              <article class="team-card">
+                <img src="images/erm.jpg" alt="erm" width="270" />
+                <div class="team-content">
+                  <h3 class="team-name">Михаил Ермаков</h3>
+                  <p class="team-profession">UI Designer</p>
+                </div>
+              </article>
             </li>
           </ul>
         </div>
