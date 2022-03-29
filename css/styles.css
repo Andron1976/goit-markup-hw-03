@@ -13,7 +13,7 @@ html {
   --accent-color: #fff;
   --specific-color: #2196f3;
 
-  --primary-bg-color: #e5e5e5;
+  --primary-bg-color: #fff;
   --accent-bg-color: #2f303a;
   --specific-bg-color: #f5f4fa;
 }
@@ -25,17 +25,37 @@ body {
 .list {
   list-style: none;
 }
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
 
 /* header */
+
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-  outline: 2px solid tomato;
+  width: 1170px;
+  border: 1px solid #ff0000;
 }
 .header {
   background: var(--accent-color);
+  border-bottom: 1px solid #ececec;
 }
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+}
+.nav,
+.head-links,
+.head-contacts {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .logotyp-head,
 .logotyp-web,
 .logotyp-footer {
@@ -46,6 +66,8 @@ body {
 }
 .logotyp-head {
   color: #000;
+  margin-right: 93px;
+  text-decoration: none;
 }
 .logotyp-web {
   color: var(--specific-color);
@@ -53,12 +75,13 @@ body {
 .head-links {
   font-weight: 500;
   line-height: 16px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 .studio-name {
   color: var(--title-text-color);
   text-decoration: none;
+  margin-right: 50px;
 }
 .studio-name:hover,
 .studio-name:focus {
@@ -69,6 +92,7 @@ body {
 }
 .portfolio-name {
   text-decoration: none;
+  margin-right: 50px;
 }
 .contacts-name {
   text-decoration: none;
@@ -77,7 +101,10 @@ body {
 .contacts-name:focus {
   color: var(--specific-color);
 }
-
+.head-contacts {
+  margin: 0px;
+  padding: 0px;
+}
 .mail-adress {
   color: var(--title-text-color);
   font-size: 14px;
@@ -98,6 +125,7 @@ body {
   font-weight: 500;
   line-height: 16px;
   text-decoration: none;
+  margin-left: 50px;
 }
 .phone-namber:hover,
 .phone-namber:focus {
@@ -143,6 +171,10 @@ h3 {
   color: var(--title-text-color);
   font-weight: 700;
 }
+.successes-hero-title,
+.hidden {
+  display: none;
+}
 .section-title {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -153,7 +185,7 @@ h3 {
 /* .first {
   color: var(--primary-bg-color);
 } */
-.section {
+.advertising-section {
   background: var(--primary-bg-color);
   padding-top: 94px;
   padding-bottom: 94px;
@@ -180,9 +212,7 @@ h3 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.no-gap {
-  display: block;
-}
+
 .gray {
   background: var(--specific-bg-color);
 }
@@ -194,10 +224,7 @@ h3 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.two-image {
-  margin-top: 0px;
-  margin-bottom: 30px;
-}
+
 .team-name {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -226,16 +253,22 @@ h3 {
 .portfolio-main {
   background: var(--primary-bg-color);
 }
-.button-group {
-  margin-top: 0px;
+.button-section > .button-group {
+  margin-top: 18 0px;
   margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
 }
 .button-first {
   color: var(--accent-color);
   background: var(--specific-color);
   width: 73px;
   border: 1px solid var(--specific-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
+
 .button-first:hover,
 .button-first:focus {
   background: var(--accent-bg-color);
@@ -255,22 +288,29 @@ h3 {
   padding: 6px 22px;
   height: 38px;
 }
-.third-image {
-  margin-top: 0px;
-  margin-bottom: 20px;
-}
+
 .advertising-name {
   color: var(--title-text-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   text-decoration: none;
-  margin-top: 0px;
-  margin-bottom: 4px;
+  margin: 0px 24px 4px;
+}
+.advertising-block {
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
+}
+.third-image {
+  margin-bottom: 20px;
 }
 .advertising-scroll {
   margin-top: 0px;
   margin-bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px;
 }
 .advertising-variety {
   color: var(--primary-text-color);
@@ -279,9 +319,9 @@ h3 {
   font-style: normal;
   font-weight: 400;
   line-height: 1.88;
-  margin-top: 0px;
-  margin-bottom: 20px;
+  margin: 0px 24px 20px;
 }
+
 /* footer */
 .footer {
   background: var(--accent-bg-color);
@@ -294,11 +334,20 @@ h3 {
   font-size: 26px;
   line-height: 1.19;
 }
+.footer-contacts {
+  padding: 0px;
+  margin: 0px;
+}
 .address-footer {
   color: var(--accent-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  margin-bottom: 9px;
+  margin-top: 20px;
+}
+.footer-mail-contact {
+  margin-bottom: 9px;
 }
 .mail-footer,
 .phone-footer {
@@ -306,6 +355,10 @@ h3 {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+.phone-footer {
+  margin: 0px;
+  padding: 0px;
 }
 .address-footer:hover,
 .address-footer:focus {

@@ -20,10 +20,10 @@
   <body>
     <header class="header">
       <div class="container">
-        <a href="" class="logotyp-head"
-          ><span class="logotyp-web">Web</span>Studio</a
-        >
-        <nav>
+        <nav class="nav">
+          <a href="" class="logotyp-head"
+            ><span class="logotyp-web">Web</span>Studio</a
+          >
           <ul class="head-links list">
             <li>
               <a href="index.html" class="studio-name current">Студия</a>
@@ -35,18 +35,25 @@
           </ul>
         </nav>
         <!--contact section-->
-        <a href="mailto:info@devstudio.com" class="mail-adress current"
-          >info@devstudio.com</a
-        >
-        <a href="tel:+380961111111" class="phone-namber">+38 096 111 11 11</a>
+        <ul class="head-contacts list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="mail-adress current"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="phone-namber"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <main class="portfolio-main">
       <!--button group-->
-      <nav class="container">
-        <button type="button" class="button-first">Все</button>
-
+      <nav class="button-section container">
         <ul class="button-group list">
+          <li><button type="button" class="button-first">Все</button></li>
           <li>
             <button type="button" class="button-second">Веб-сайты</button>
           </li>
@@ -61,129 +68,143 @@
       </nav>
 
       <!--advertising section-->
-      <section class="section container">
-        <h2 class="section-title">Наша реклама</h2>
+      <section class="advertising-section container">
+        <h2 class="hidden">Наша реклама</h2>
         <ul class="advertising-scroll list">
           <li>
-            <a href="">
+            <article class="advertising-block">
               <img
-                class="third-image no-gap"
+                class="third-image"
                 src="images/krjak.jpg"
                 alt="krjak"
                 width="370"
               />
-              <p class="advertising-name">Технокряк</p>
+              <h3 class="advertising-name">Технокряк</h3>
               <p class="advertising-variety">Веб-сайт</p>
-            </a>
+            </article>
           </li>
           <li>
-            <a href="">
+            <article class="advertising-block">
               <img
-                class="third-image no-gap"
+                class="third-image"
                 src="images/basket.jpg"
                 alt="basket"
                 width="370"
               />
-              <p class="advertising-name">Постер New Orlean vs Golden Star</p>
+              <h3 class="advertising-name">Постер New Orlean vs Golden Star</h3>
               <p class="advertising-variety">Дизайн</p>
-            </a>
+            </article>
           </li>
           <li>
-            <a href="">
+            <article class="advertising-block">
               <img
-                class="third-image no-gap"
+                class="third-image"
                 src="images/seafood.jpg "
                 alt="seafood"
                 width="370"
               />
-              <p class="advertising-name">Ресторан Seafood</p>
-              <p class="advertising-variety">Приложение</p>
-            </a>
+              <div advertising-footer>
+                <h3 class="advertising-name">Ресторан Seafood</h3>
+                <p class="advertising-variety">Приложение</p>
+              </div>
+            </article>
           </li>
           <li>
-            <a href="">
+            <article class="advertising-block">
               <img
-                class="third-image no-gap"
+                class="third-image"
                 src="images/headphones.jpg"
                 alt="headphones"
                 width="370"
               />
-              <p class="advertising-name">Проект Prime</p>
+              <h3 class="advertising-name">Проект Prime</h3>
               <p class="advertising-variety">Маркетинг</p>
-            </a>
+            </article>
           </li>
           <li>
-            <a href="">
+            <article class="advertising-block">
               <img
-                class="third-image no-gap"
+                class="third-image"
                 src="images/boxes.jpg"
                 alt="boxes"
                 width="370"
               />
-              <p class="advertising-name">Проект Boxes</p>
+              <h3 class="advertising-name">Проект Boxes</h3>
               <p class="advertising-variety">Приложение</p>
-            </a>
+            </article>
           </li>
           <li>
-            <a href="">
+            <article class="advertising-block">
               <img
-                class="third-image no-gap"
+                class="third-image"
                 src="images/monitor.jpg"
                 alt="monitor"
                 width="370"
               />
-              <p class="advertising-name">Inspiration has no Borders</p>
+              <h3 class="advertising-name">Inspiration has no Borders</h3>
               <p class="advertising-variety">Веб-сайт</p>
-            </a>
+            </article>
           </li>
           <li>
-            <a href="">
+            <article class="advertising-block">
               <img
-                class="third-image no-gap"
+                class="third-image"
                 src="images/journal.jpg"
                 alt="journal"
                 width="370"
               />
-              <p class="advertising-name">Издание Limited Edition</p>
+              <h3 class="advertising-name">Издание Limited Edition</h3>
               <p class="advertising-variety">Дизайн</p>
-            </a>
+            </article>
           </li>
           <li>
-            <a href="">
+            <article class="advertising-block">
               <img
-                class="third-image no-gap"
+                class="third-image"
                 src="images/lab.jpg"
                 alt="lab"
                 width="370"
               />
-              <p class="advertising-name">Проект LAB</p>
+              <h3 class="advertising-name">Проект LAB</h3>
               <p class="advertising-variety">Маркетинг</p>
-            </a>
+            </article>
           </li>
           <li>
-            <a href="">
+            <article class="advertising-block">
               <img
-                class="third-image no-gap"
+                class="third-image"
                 src="images/growing.jpg"
                 alt="growing"
                 width="370"
               />
-              <p class="advertising-name">Growing Business</p>
+              <h3 class="advertising-name">Growing Business</h3>
               <p class="advertising-variety">Приложение</p>
-            </a>
+            </article>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="footer container">
-      <a href="" class="logotyp-footer"
-        ><span class="logotyp-web">Web</span>Studio</a
-      >
-      <address class="address-footer">г. Киев, пр-т Леси Украинки, 26</address>
-      <a href="mailto:info@devstudio.com" class="mail-footer"
-        >info@devstudio.com</a
-      >
-      <a href="tel:+380961111111" class="phone-footer">+38 096 111 11 11</a>
+    <footer class="footer">
+      <div class="container">
+        <a href="" class="logotyp-footer"
+          ><span class="logotyp-web">Web</span>Studio</a
+        >
+        <address class="address-footer">
+          г. Киев, пр-т Леси Украинки, 26
+        </address>
+        <ul class="footer-contacts list">
+          <li class="footer-mail-contact">
+            <a href="mailto:info@devstudio.com" class="mail-footer"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="phone-footer"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
