@@ -146,7 +146,7 @@ img {
 .hero-title {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
+  margin-top: 200px;
   margin-bottom: 30px;
   width: 696px;
   height: 120px;
@@ -164,6 +164,7 @@ img {
   cursor: pointer;
   width: 200px;
   height: 50px;
+  margin-bottom: 200px;
 }
 /* sections */
 h2,
@@ -171,7 +172,6 @@ h3 {
   color: var(--title-text-color);
   font-weight: 700;
 }
-.successes-hero-title,
 .hidden {
   display: none;
 }
@@ -182,14 +182,7 @@ h3 {
   line-height: 1.17;
   text-align: center;
 }
-/* .first {
-  color: var(--primary-bg-color);
-} */
-.advertising-section {
-  background: var(--primary-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .successes-title {
   font-size: 14px;
   line-height: 1.14;
@@ -252,10 +245,12 @@ h3 {
 }
 .portfolio-main {
   background: var(--primary-bg-color);
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 .button-section > .button-group {
-  margin-top: 18 0px;
-  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
 }
@@ -278,6 +273,10 @@ h3 {
   color: var(--title-text-color);
   border: 1px solid var(--specific-bg-color);
 }
+.button-second:hover,
+.button-second:focus {
+  background: var(--specific-color);
+}
 .button-first,
 .button-second {
   font-size: 16px;
@@ -287,6 +286,7 @@ h3 {
   border-radius: 4px;
   padding: 6px 22px;
   height: 38px;
+  margin-right: 8px;
 }
 
 .advertising-name {
@@ -298,11 +298,17 @@ h3 {
   margin: 0px 24px 4px;
 }
 .advertising-block {
-  border: 1px solid #eeeeee;
-  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.advertising-content {
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .third-image {
-  margin-bottom: 20px;
+  vertical-align: bottom;
 }
 .advertising-scroll {
   margin-top: 0px;
@@ -319,7 +325,7 @@ h3 {
   font-style: normal;
   font-weight: 400;
   line-height: 1.88;
-  margin: 0px 24px 20px;
+  margin: 0px 24px 0px;
 }
 
 /* footer */
