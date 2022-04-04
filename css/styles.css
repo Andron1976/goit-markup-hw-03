@@ -78,65 +78,35 @@ img {
   margin: 0px;
   padding: 0px;
 }
-.studio-name {
+.head-names {
   color: var(--title-text-color);
   text-decoration: none;
   margin-right: 50px;
 }
-.studio-name:hover,
-.studio-name:focus {
-  color: var(--specific-color);
-}
-.studio-name.current {
-  color: var(--specific-color);
-}
-.portfolio-name {
-  text-decoration: none;
-  margin-right: 50px;
-}
-.contacts-name {
-  text-decoration: none;
-}
-.contacts-name:hover,
-.contacts-name:focus {
+.head-names:hover,
+.head-names:focus {
   color: var(--specific-color);
 }
 .head-contacts {
   margin: 0px;
   padding: 0px;
 }
-.mail-adress {
+.contact-head {
   color: var(--title-text-color);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  text-decoration: none;
-}
-.mail-adress:hover,
-.mail-adress:focus {
-  color: var(--specific-color);
-}
-.mail-adress.current {
-  color: var(--specific-color);
-}
-.phone-namber {
-  color: var(--primary-text-color);
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
   text-decoration: none;
   margin-left: 50px;
 }
-.phone-namber:hover,
-.phone-namber:focus {
+.contact-head:hover,
+.contact-head:focus {
   color: var(--specific-color);
 }
 .portfolio-name {
   color: var(--title-text-color);
 }
-.contacts-name {
-  color: var(--title-text-color);
-}
+
 
 /* hero */
 .hero-section {
@@ -269,55 +239,43 @@ h3 {
   color: var(--specific-color);
 }
 
-.button-section > .button-group {
+.button-group {
   margin-top: 0px;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
 }
-.button-first {
-  color: var(--accent-color);
-  background: var(--specific-color);
-  width: 73px;
-  border: 1px solid var(--specific-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
 
-.button-first:hover,
-.button-first:focus {
-  background: var(--accent-bg-color);
-}
-.button-second {
-  background: var(--specific-bg-color);
-  color: var(--title-text-color);
-  border: 1px solid var(--specific-bg-color);
-}
-.button-second:hover,
-.button-second:focus {
-  background: var(--specific-color);
-}
-.button-first,
-.button-second {
+.buttons {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.63;
   cursor: pointer;
+  background: var(--specific-bg-color);
+  color: var(--title-text-color);
+  border: 1px solid var(--specific-bg-color);
+  height: 38px;
   border-radius: 4px;
   padding: 6px 22px;
-  height: 38px;
   margin-right: 8px;
 }
-
-.advertising-name {
-  color: var(--title-text-color);
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 2;
-  text-decoration: none;
-  margin: 0px 24px 4px;
+.buttons:hover,
+.buttons:focus {
+  background: var(--specific-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: var(--accent-color);
 }
+.advertising-section {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px;
+}
+
 .advertising-block {
   margin-top: 30px;
 }
@@ -326,16 +284,16 @@ h3 {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0 20px 24px;
 }
-.advertising-scroll {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0px;
-}
+.advertising-name {
+  color: var(--title-text-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  text-decoration: none;
+  margin-bottom: 4px;}
+
 .advertising-variety {
   color: var(--primary-text-color);
   text-decoration: none;
@@ -343,7 +301,7 @@ h3 {
   font-style: normal;
   font-weight: 400;
   line-height: 1.88;
-  margin: 0px 24px 0px;
+  margin: 0;
 }
 
 /* footer */
@@ -351,17 +309,16 @@ h3 {
   background: var(--accent-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  
 }
 .logotyp-footer {
   color: var(--accent-color);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
 }
-.footer-contacts {
-  padding: 0px;
-  margin: 0px;
-}
+
 .address-footer {
   color: var(--accent-color);
   font-weight: 400;
@@ -370,29 +327,23 @@ h3 {
   margin-bottom: 9px;
   margin-top: 20px;
 }
-.footer-mail-contact {
-  margin-bottom: 9px;
-}
-.mail-footer,
-.phone-footer {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-}
-.phone-footer {
-  margin: 0px;
-  padding: 0px;
-}
 .address-footer:hover,
 .address-footer:focus {
   color: var(--specific-color);
 }
-.mail-footer:hover,
-.mail-footer:focus {
-  color: var(--specific-color);
+.footer-contacts {
+  padding: 0;
 }
-.phone-footer:hover,
-.phone-footer:focus {
+
+.contact-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  padding-bottom: 9px;
+  text-decoration: none;
+}
+.contact-footer:hover,
+.contact-footer:focus {
   color: var(--specific-color);
 }
