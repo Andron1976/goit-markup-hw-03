@@ -103,9 +103,7 @@ img {
 .contact-head:focus {
   color: var(--specific-color);
 }
-.portfolio-name {
-  color: var(--title-text-color);
-}
+
 
 
 /* hero */
@@ -283,7 +281,6 @@ h3 {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-  padding-top: 20px;
   padding: 20px 0 20px 24px;
 }
 .advertising-name {
